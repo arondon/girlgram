@@ -1,0 +1,58 @@
+service: girlgram-api
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+  stage: ${opt:stage, 'prod'}
+  memorySize: 512
+  timeout: 30
+  environment:
+    NODE_ENV: production
+    DATABASE_URL: ${env:DATABASE_URL}
+    SESSION_SECRET: ${env:SESSION_SECRET}
+    REPL_ID: ${env:REPL_ID}
+    REPLIT_DOMAINS: ${env:REPLIT_DOMAINS}
+    ISSUER_URL: ${env:ISSUER_URL}
+
+functions:
+  api:
+    handler: dist/lambda.handler
+    events:
+      - http:
+          path: /{proxy+}
+          method: ANY
+          cors:
+            origin: '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
+      - http:
+          path: /
+          method: ANY
+          cors:
+            origin: '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
+
+plugins:
+  - serverless-offline
+
+package:
+  patterns:
+    - '!node_modules/**'
+    - '!client/**'
+    - '!.git/**'
+    - '!README.md'
+    - 'dist/lambda.js'
