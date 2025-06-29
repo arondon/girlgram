@@ -1,0 +1,66 @@
+0
+2025-06-29T18:53:13.932Z [INFO]: # Build environment configured with Standard build compute type: 8GiB Memory, 4vCPUs, 128GB Disk Space
+1
+2025-06-29T18:53:14.542Z [INFO]: # Cloning repository: git@github.com:arondon/girlgram.git
+2
+2025-06-29T18:53:15.576Z [INFO]: 
+3
+2025-06-29T18:53:15.577Z [INFO]: Cloning into 'girlgram'...
+4
+2025-06-29T18:53:15.577Z [INFO]: # Switching to commit: a3ef03b487486bafcaa805a3c495b981b27166cc
+5
+2025-06-29T18:53:15.594Z [INFO]: Note: switching to 'a3ef03b487486bafcaa805a3c495b981b27166cc'.
+6
+                                 You are in 'detached HEAD' state. You can look around, make experimental
+7
+                                 changes and commit them, and you can discard any commits you make in this
+8
+                                 state without impacting any branches by switching back to a branch.
+9
+                                 If you want to create a new branch to retain commits you create, you may
+10
+                                 do so (now or later) by using -c with the switch command. Example:
+11
+                                 git switch -c <new-branch-name>
+12
+                                 Or undo this operation with:
+13
+                                 git switch -
+14
+                                 Turn off this advice by setting config variable advice.detachedHead to false
+15
+                                 HEAD is now at a3ef03b new upload
+16
+2025-06-29T18:53:15.641Z [INFO]: Successfully cleaned up Git credentials
+17
+2025-06-29T18:53:15.642Z [INFO]: # Checking for Git submodules at: /codebuild/output/src464888943/src/girlgram/.gitmodules
+18
+2025-06-29T18:53:15.649Z [INFO]: # Retrieving environment cache...
+19
+2025-06-29T18:53:15.708Z [INFO]: # Retrieved environment cache
+20
+2025-06-29T18:53:15.708Z [INFO]: ---- Setting Up SSM Secrets ----
+21
+2025-06-29T18:53:15.708Z [INFO]: SSM params {"Path":"/amplify/d17q8eb33dlus1/main/","WithDecryption":true}
+22
+2025-06-29T18:53:15.750Z [WARNING]: !Failed to set up process.env.secrets
+23
+2025-06-29T18:53:16.449Z [INFO]: # No package override configuration found.
+24
+2025-06-29T18:53:16.453Z [INFO]: # Retrieving cache...
+25
+2025-06-29T18:53:21.051Z [INFO]: # Extracting cache...
+26
+2025-06-29T18:53:29.142Z [INFO]: # Extraction completed
+27
+2025-06-29T18:53:29.276Z [INFO]: # Retrieved cache
+28
+2025-06-29T18:53:33.869Z [INFO]: ## Starting Backend Build
+29
+                                 ## Checking for associated backend environment...
+30
+                                 ## No backend environment association found, continuing...
+31
+                                 ## Completed Backend Build
+32
+2025-06-29T18:53:33.875Z [INFO]: {"backendDuration": 0}

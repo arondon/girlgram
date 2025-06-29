@@ -1,0 +1,66 @@
+50
+                                 # Executing command: npx vite build
+51
+2025-06-29T19:01:28.265Z [INFO]: vite v5.4.19 building for production...
+52
+2025-06-29T19:01:28.320Z [INFO]: transforming...
+53
+2025-06-29T19:01:28.588Z [WARNING]: Browserslist: browsers data (caniuse-lite) is 8 months old. Please run:
+54
+                                    npx update-browserslist-db@latest
+55
+                                    Why you should do it regularly: https://github.com/browserslist/update-db#readme
+56
+2025-06-29T19:01:29.015Z [INFO]: ✓ 6 modules transformed.
+57
+2025-06-29T19:01:29.016Z [WARNING]: x Build failed in 730ms
+58
+2025-06-29T19:01:29.016Z [WARNING]: error during build:
+59
+                                    [vite:esbuild] Transform failed with 1 error:
+60
+                                    /codebuild/output/src3543398831/src/girlgram/client/src/pages/Home.tsx:1:2: ERROR: Expected identifier but found "-"
+61
+                                    file: /codebuild/output/src3543398831/src/girlgram/client/src/pages/Home.tsx:1:2
+62
+                                    Expected identifier but found "-"
+63
+                                    1  |  @ -0,0 +1,186 @@
+64
+                                    |    ^
+65
+                                    2  |  import { useEffect } from "react";
+66
+                                    3  |  import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
+67
+                                    at failureErrorWithLog (/codebuild/output/src3543398831/src/girlgram/node_modules/vite/node_modules/esbuild/lib/main.js:1472:15)
+68
+                                    at /codebuild/output/src3543398831/src/girlgram/node_modules/vite/node_modules/esbuild/lib/main.js:755:50
+69
+                                    at responseCallbacks.<computed> (/codebuild/output/src3543398831/src/girlgram/node_modules/vite/node_modules/esbuild/lib/main.js:622:9)
+70
+                                    at handleIncomingPacket (/codebuild/output/src3543398831/src/girlgram/node_modules/vite/node_modules/esbuild/lib/main.js:677:12)
+71
+                                    at Socket.readFromStdout (/codebuild/output/src3543398831/src/girlgram/node_modules/vite/node_modules/esbuild/lib/main.js:600:7)
+72
+                                    at Socket.emit (node:events:517:28)
+73
+                                    at addChunk (node:internal/streams/readable:368:12)
+74
+                                    at readableAddChunk (node:internal/streams/readable:341:9)
+75
+                                    at Readable.push (node:internal/streams/readable:278:10)
+76
+                                    at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+77
+2025-06-29T19:01:29.030Z [ERROR]: !!! Build failed
+78
+2025-06-29T19:01:29.030Z [ERROR]: !!! Error: Command failed with exit code 1
+79
+2025-06-29T19:01:29.030Z [INFO]: # Starting environment caching...
+80
+2025-06-29T19:01:29.030Z [INFO]: # Uploading environment cache artifact...
+81
+2025-06-29T19:01:29.117Z [INFO]: # Uploaded environment cache artifact
+82
+2025-06-29T19:01:29.117Z [INFO]: # Environment caching completed
